@@ -1,16 +1,16 @@
-%define		kdeplasmaver	5.22.5
+%define		kdeplasmaver	5.23.0
 %define		qtver		5.9.0
 %define		kpname		plasma-phone-components
 %define		kf5ver		5.39.0
 
 Summary:	plasma-phone-components
 Name:		kp5-%{kpname}
-Version:	5.22.5
+Version:	5.23.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	bf821fe54cbe5a75a53b47703c192f73
+# Source0-md5:	21cf243f101f169db9ffd8ff35ee0c4d
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.15.0
 BuildRequires:	Qt5Gui-devel >= 5.15.0
@@ -26,7 +26,7 @@ BuildRequires:	kf5-knotifications-devel >= 5.82
 BuildRequires:	kf5-kservice-devel >= 5.82
 BuildRequires:	kf5-kwayland-devel >= 5.82
 BuildRequires:	kf5-plasma-framework-devel >= 5.82
-BuildRequires:	kp5-kwin-devel
+BuildRequires:	kp5-kwin-devel >= 5.23.0
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.164
@@ -80,3 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/plasma/plasmoids/org.kde.phone.taskpanel
 %{_datadir}/plasma/shells/org.kde.plasma.phoneshell
 %{_datadir}/wayland-sessions/plasma-mobile.desktop
+%{_libdir}/qt5/qml/org/kde/plasma/mm/libppc-mmqmlplugin.so
+%{_libdir}/qt5/qml/org/kde/plasma/mm/qmldir
+%{_datadir}/plasma/quicksettings/org.kde.plasma.airplanemode
+%{_datadir}/plasma/quicksettings/org.kde.plasma.nightcolor
