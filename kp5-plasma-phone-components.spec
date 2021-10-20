@@ -1,16 +1,16 @@
-%define		kdeplasmaver	5.23.0
+%define		kdeplasmaver	5.23.1
 %define		qtver		5.9.0
 %define		kpname		plasma-phone-components
 %define		kf5ver		5.39.0
 
 Summary:	plasma-phone-components
 Name:		kp5-%{kpname}
-Version:	5.23.0
+Version:	5.23.1
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	21cf243f101f169db9ffd8ff35ee0c4d
+# Source0-md5:	dd105ecb8aeb23bb41dd21eaed5dcfff
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.15.0
 BuildRequires:	Qt5Gui-devel >= 5.15.0
