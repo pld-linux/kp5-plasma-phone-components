@@ -1,16 +1,16 @@
-%define		kdeplasmaver	5.23.4
+%define		kdeplasmaver	5.23.5
 %define		qtver		5.9.0
 %define		kpname		plasma-phone-components
 %define		kf5ver		5.39.0
 
 Summary:	plasma-phone-components
 Name:		kp5-%{kpname}
-Version:	5.23.4
+Version:	5.23.5
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	6977fd972f03934aa40f6dceead0268a
+# Source0-md5:	9a2ff931dea6f210138b22adc3fca0c7
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.15.0
 BuildRequires:	Qt5Gui-devel >= 5.15.0
@@ -84,3 +84,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt5/qml/org/kde/plasma/mm/qmldir
 %{_datadir}/plasma/quicksettings/org.kde.plasma.airplanemode
 %{_datadir}/plasma/quicksettings/org.kde.plasma.nightcolor
+%{_datadir}/kservices5/plasma-applet-org.kde.phone.activities.desktop
+%{_datadir}/kservices5/plasma-applet-org.kde.phone.homescreen.desktop
+%{_datadir}/kservices5/plasma-applet-org.kde.phone.krunner.desktop
+%{_datadir}/kservices5/plasma-applet-org.kde.phone.panel.desktop
+%{_datadir}/kservices5/plasma-applet-org.kde.phone.taskpanel.desktop
+%{_datadir}/kservices5/plasma-applet-org.kde.plasma.airplanemode.desktop
+%{_datadir}/kservices5/plasma-applet-org.kde.plasma.nightcolor.desktop
+%{_datadir}/kservices5/plasma-applet-org.kde.plasma.phone.desktop
+%{_datadir}/kservices5/plasma-applet-org.kde.plasma.phoneshell.desktop
