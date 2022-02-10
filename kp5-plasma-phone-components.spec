@@ -1,16 +1,16 @@
-%define		kdeplasmaver	5.23.5
+%define		kdeplasmaver	5.24.0
 %define		qtver		5.9.0
 %define		kpname		plasma-phone-components
 %define		kf5ver		5.39.0
 
 Summary:	plasma-phone-components
 Name:		kp5-%{kpname}
-Version:	5.23.5
+Version:	5.24.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	9a2ff931dea6f210138b22adc3fca0c7
+# Source0-md5:	3e0e67f2a798b51025cb97a750fc1dea
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.15.0
 BuildRequires:	Qt5Gui-devel >= 5.15.0
@@ -39,7 +39,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 UI components for Plasma Phone.
 
 %prep
-%setup -q -n %{kpname}-%{version}
+%setup -q -n plasma-mobile-%{version}
 
 %build
 install -d build
@@ -93,3 +93,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kservices5/plasma-applet-org.kde.plasma.nightcolor.desktop
 %{_datadir}/kservices5/plasma-applet-org.kde.plasma.phone.desktop
 %{_datadir}/kservices5/plasma-applet-org.kde.plasma.phoneshell.desktop
+%{_libdir}/qt5/qml/org/kde/plasma/quicksetting/nightcolor/libnightcolorplugin.so
+%{_libdir}/qt5/qml/org/kde/plasma/quicksetting/nightcolor/qmldir
